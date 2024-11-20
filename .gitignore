@@ -1,6 +1,7 @@
 # Compiler files
 cache/
 out/
+node_modules/
 
 # Ignores development broadcast logs
 !/broadcast
@@ -10,5 +11,12 @@ out/
 # Docs
 docs/
 
-# Dotenv file
+# files
 .env
+package-lock.json
+.github
+price_update.txt
+
+# IDE
+.idea
+.vscode

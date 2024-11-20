@@ -28,7 +28,7 @@ export PRIVATE_KEY=0x
 forge create src/PriceFeed.sol:PriceFeed --private-key $PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL --constructor-args $PYTH_ETH_SEPOLIA_ADDRESS $ETH_USD_ID
 
 # Copy the Deployed to address
-export DEPLOYMENT_ADDRESS=0xa2E18E64C01F02541d6AE63C9729c8Bd005EcD09
+export DEPLOYMENT_ADDRESS=<<Adress of the PriceFeed contract>>
 ```
 
 ## Intreact with smart contract
@@ -48,7 +48,7 @@ noglob cast send --private-key $PRIVATE_KEY --rpc-url $SEPOLIA_RPC_URL --value 0
 
 cast call $DEPLOYMENT_ADDRESS "getEthUsdPrice()" --rpc-url $SEPOLIA_RPC_URL
 
-cast --to-dec  Result
+cast --to-dec  <<Result>>
 ```
 
 ### Help

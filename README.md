@@ -59,6 +59,9 @@ cast call $DEPLOYMENT_ADDRESS "getEthUsdPrice()" --rpc-url $SEPOLIA_RPC_URL
 cast --to-dec  <<Result>>
 ```
 
+### Exercise for you
+To write tests for the smart contract in `test` folder. To get started, check out https://book.getfoundry.sh/forge/tests 
+
 ### Help
 
 ```shell

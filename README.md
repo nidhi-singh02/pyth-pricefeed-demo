@@ -1,5 +1,13 @@
 ## Pyth Price Feed Data Demo
 
+### Pre-requisities
+1) Install node.js, refer https://nodejs.org/en/download/package-manager. Once installed, check the version.
+
+```shell
+node --version
+```
+2) Install foundry, refer here - https://book.getfoundry.sh/getting-started/installation. Check for `forge` and `cast`
+
 ### Build
 
 ```shell
@@ -18,7 +26,7 @@ $ forge test
 $ forge fmt
 ```
 
-### Deploy
+### Deploy the smart contract on Sepolia public testnet
 ```shell
 export SEPOLIA_RPC_URL=https://rpc.sepolia.org
 export PYTH_ETH_SEPOLIA_ADDRESS=0xDd24F84d36BF92C65F92307595335bdFab5Bbd21
@@ -31,7 +39,7 @@ forge create src/PriceFeed.sol:PriceFeed --private-key $PRIVATE_KEY --rpc-url $S
 export DEPLOYMENT_ADDRESS=<<Adress of the PriceFeed contract>>
 ```
 
-## Intreact with smart contract
+## Interact with smart contract functions
 
 ```shell
 cast call $DEPLOYMENT_ADDRESS "getEthUsdPrice()" --rpc-url $SEPOLIA_RPC_URL --trace

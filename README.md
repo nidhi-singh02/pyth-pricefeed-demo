@@ -8,6 +8,12 @@ node --version
 ```
 2) Install foundry, refer here - https://book.getfoundry.sh/getting-started/installation. Check for `forge` and `cast`
 
+### Install the dependencies
+
+```shell
+$ npm install
+```
+
 ### Build
 
 ```shell
